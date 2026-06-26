@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { useState, useEffect, useRef } from "react";
 
 // ─── TRADUCTIONS ──────────────────────────────────────────────────────────────
@@ -688,3 +690,5 @@ export default function DebateSphere() {
     </div>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<DebateSphere />);
